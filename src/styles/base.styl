@@ -1,0 +1,71 @@
+//
+// resets
+//
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, nav, section, summary
+    display: block
+
+body, h1, h2, h3, h4, p, ul
+    margin: 0
+    padding: 0
+
+a
+    color: inherit
+
+//
+// type
+//
+
+headerfont = sans-serif
+textfont = serif
+
+scale = 1.681
+M = 16px
+L = scale * 1em
+XL = scale * scale * 1em
+XXL = scale * scale * scale * 1em
+
+body
+    font-size: M
+    font-family: textfont
+    line-height: 1.4
+
+h1, h2, h3, h4
+    line-height: 1
+    font-family: headerfont
+    a
+        text-decoration: none
+
+h1
+    font-size: XL
+h2
+    font-size: L
+h3
+    font-size: M
+    font-weight: bold
+
+
+@media (min-width: 40em)
+    .container
+        width: 35em
+        margin: 0 auto
+
+    h1
+        font-size: $XXL
+
+    h2
+        font-size: $XL
+
+    h3
+        font-size: $L
+
+    h4
+        font-size: $M
+        font-weight: bold
+
+
+@media (max-width: 40em)
+    .container
+        padding:  0 10px
+
